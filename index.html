@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container container-1">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+        <h4>Container-1: div is block element. so by defualt items are in vertical position</h4>
+    </section>
+    <section>
+        <div class="container container-2">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+        <h4>Container-2: this div have flex display. flex items default direction is horizontally left to right</h4>
+        <pre>
+            display: flex;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-3">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+        <h4>Container-3: this div have reverse flex direction. flex items are aligned in reverse direction (right to left)</h4>
+        <pre>
+            display: flex;
+            flex-direction: row-reverse;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-4">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+        <h4>Container-4: this div have column flex direction. flex items are aligned in vertical direction (top to bottom)</h4>
+        <pre>
+            display: flex;
+            flex-direction: column;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-5">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+        </div>
+        <h4>Container-5: this div have reverse column flex direction. flex items are aligned in vertical reverse direction (bottom to top)</h4>
+        <pre>
+            display: flex;
+            flex-direction: column-reverse;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-6">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+        </div>
+        <h4>Container-6: too much item may overflow outside div as flex-wrap: nowrap is set default. use wrap to auto align</h4>
+        <pre>
+            display: flex;
+            flex-wrap: wrap;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-7">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+        </div>
+        <h4>Container-7: use wrap-reverse to reverse auto align</h4>
+        <pre>
+            display: flex;
+            flex-wrap: wrap-reverse;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-8">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+        </div>
+        <h4>Container-8: use wrap and column direction for vertical auto align</h4>
+        <pre>
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-9">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+        </div>
+        <h4>Container-9: use wrap-reverse and column direction for vertical reverse auto align</h4>
+        <pre>
+            display: flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: column;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-10">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+        </div>
+        <h4>Container-10: flex-flow is the combination of flex-direction and flex-wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: column wrap-reverse;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-11">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-11: By default item are left aligned in row wrap. (justify-content: flex-start) set default.</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            /* justify-content: flex-start; */
+        </pre>
+    </section>
+    <section>
+        <div class="container container-12">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-12: justify-content: flex-end; move item in right align in row wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-13">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-13: justify-content: center; move item in center align in row wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-14">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-14: justify-content: space-around; move item in center align with equal space around in row wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-15">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-15: justify-content: space-between; move item in justified align in row wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-16">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-16: justify-content: space-evenly; will move item in such way that every item will have equal space around each other in row wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        </pre>
+    </section>
+    ------------------------
+    <section>
+        <div class="container container-17">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-17: By default item are left aligned in coloumn wrap. (justify-content: flex-start) set default.</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            /* justify-content: flex-start; */
+        </pre>
+    </section>
+    <section>
+        <div class="container container-18">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-18: justify-content: flex-end; move item in right align in coloumn wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            justify-content: flex-end;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-19">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-19: justify-content: center; move item in center align in coloumn wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            justify-content: center;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-20">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-20: justify-content: space-around; move item in center align with equal space around in coloumn wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            justify-content: space-around;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-21">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-21: justify-content: space-between; move item in justified align in coloumn wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            justify-content: space-between;
+        </pre>
+    </section>
+    <section>
+        <div class="container container-22">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-4">5</div>
+        </div>
+        <h4>Container-22: justify-content: space-evenly; will move item in such way that every item will have equal space around each other in coloumn wrap</h4>
+        <pre>
+            display: flex;
+            flex-flow: coloumn wrap;
+            justify-content: space-evenly;
+        </pre>
+    </section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+section{
+    border: 2px solid #1A374D;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.container{
+    margin: 10px;
+    width: 350px;
+    border-radius: 20px;
+    height: 150px;
+    background-color: #1A374D;
+}
+h4{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+pre{
+    padding: 0px;
+    margin: 0px;
+}
+.item{
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #7CD1B8;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-2{
+    display: flex;
+    height: 60px;
+}
+.container-3{
+    display: flex;
+    height: 60px;
+    flex-direction: row-reverse;
+}
+.container-5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-6{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+}
+.container-7{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 120px;
+}
+.container-8{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container-9{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+}
+.container-10{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+}
+.container-11{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-start; */
+}
+.container-12{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.container-13{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.container-14{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.container-15{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.container-16{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.container-17{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: flex-start; */
+}
+.container-18{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.container-19{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.container-20{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+.container-21{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.container-22{
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
